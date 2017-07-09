@@ -1,4 +1,4 @@
-import { Angular4testPage } from './app.po';
+import {Angular4testPage} from "./app.po";
 
 describe('angular4test App', () => {
   let page: Angular4testPage;
