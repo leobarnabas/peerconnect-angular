@@ -1,18 +1,52 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
-import { MycmpComponent } from './mycmp/mycmp.component';
+import {BrowserModule} from "@angular/platform-browser";
+import {NgModule} from "@angular/core";
+import {FormsModule} from "@angular/forms";
+import {HttpModule} from "@angular/http";
+import {RouterModule, Routes} from "@angular/router";
+import {AppComponent} from "./app.component";
+import {HeaderComponent} from "./header/header.component";
+import {SignInComponent} from "./sign-in/sign-in.component";
+import {SignUpComponent} from "./sign-up/sign-up.component";
+import {TermsComponent} from "./terms/terms.component";
+import {FooterComponent} from "./footer/footer.component";
+import {AboutComponent} from "./about/about.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    MycmpComponent
+    HeaderComponent,
+    SignInComponent,
+    SignUpComponent,
+    TermsComponent,
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    RouterModule.forRoot([
+      {
+        path: 'header',
+        component: HeaderComponent
+      },
+      {
+        path: 'sign-up',
+        component: SignUpComponent
+      },
+      {
+        path: 'about',
+        component: AboutComponent
+      },
+      {
+        path: 'sign-in',
+        component: SignInComponent
+      },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+}

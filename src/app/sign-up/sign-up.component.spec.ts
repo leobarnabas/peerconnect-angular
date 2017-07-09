@@ -1,19 +1,19 @@
 import {async, ComponentFixture, TestBed} from "@angular/core/testing";
-import {MycmpComponent} from "./mycmp.component";
+import {SignUpComponent} from "./sign-up.component";
 
-describe('MycmpComponent', () => {
-  let component: MycmpComponent;
-  let fixture: ComponentFixture<MycmpComponent>;
+describe('SignUpComponent', () => {
+  let component: SignUpComponent;
+  let fixture: ComponentFixture<SignUpComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [MycmpComponent]
+      declarations: [SignUpComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MycmpComponent);
+    fixture = TestBed.createComponent(SignUpComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

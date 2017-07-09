@@ -1,19 +1,19 @@
 import {async, ComponentFixture, TestBed} from "@angular/core/testing";
-import {MycmpComponent} from "./mycmp.component";
+import {HeaderComponent} from "./header.component";
 
-describe('MycmpComponent', () => {
-  let component: MycmpComponent;
-  let fixture: ComponentFixture<MycmpComponent>;
+describe('HeaderComponent', () => {
+  let component: HeaderComponent;
+  let fixture: ComponentFixture<HeaderComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [MycmpComponent]
+      declarations: [HeaderComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MycmpComponent);
+    fixture = TestBed.createComponent(HeaderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
