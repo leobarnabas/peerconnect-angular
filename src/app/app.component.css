@@ -1,36 +1,63 @@
 body {
-  padding: 5px;
+  margin: 0;
 }
 
-main {
-  padding: 0 20px;
-  min-height: 300px;
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
-.products-table {
-  margin-top: 20px;
+ul.topnav li {
+  float: left;
 }
 
-.delete-column {
-  width: 60px;
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-/* side form */
-.view-side-form {
-
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
 }
 
-.side-form {
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  right: 0;
-  width: 80%;
-  height: 100%;
-  overflow: auto;
-  background: #fff;
-  padding: 20px;
-  border-left: 1px solid #e0e0e0;
+ul.topnav li a.active {
+  background-color: #4CAF50;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 100%;
 }
 
 footer {

@@ -1,0 +1,3 @@
+input[type=text], [type=password] {
+  box-sizing: border-box;
+}
