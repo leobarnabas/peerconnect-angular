@@ -18,7 +18,7 @@ export class SignInComponent implements OnInit {
     e.preventDefault();
     var userName = e.target.elements[0].value;
     var password = e.target.elements[1].value;
-    this.router.navigate(['about']);
+    this.router.navigate(['search-mentor']);
     console.log(userName, password);
     /*return false;*/
   }
