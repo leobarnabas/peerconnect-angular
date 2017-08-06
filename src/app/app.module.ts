@@ -5,6 +5,7 @@ import {HttpModule} from "@angular/http";
 import {RouterModule} from "@angular/router";
 import {AppComponent} from "./app.component";
 import {HeaderComponent} from "./header/header.component";
+import {SearchMentorComponent} from "./search-mentor/search-mentor.component";
 import {SignInComponent} from "./sign-in/sign-in.component";
 import {SignUpComponent} from "./sign-up/sign-up.component";
 import {TermsComponent} from "./terms/terms.component";
@@ -15,6 +16,7 @@ import {AboutComponent} from "./about/about.component";
   declarations: [
     AppComponent,
     HeaderComponent,
+    SearchMentorComponent,
     SignInComponent,
     SignUpComponent,
     TermsComponent,
@@ -30,6 +32,11 @@ import {AboutComponent} from "./about/about.component";
         path: 'header',
         component: HeaderComponent
       },
+      {
+        path: 'search-mentor',
+        component: SearchMentorComponent
+      },
+
       {
         path: 'sign-up',
         component: SignUpComponent
