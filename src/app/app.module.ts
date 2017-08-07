@@ -11,6 +11,8 @@ import {SignUpComponent} from "./sign-up/sign-up.component";
 import {TermsComponent} from "./terms/terms.component";
 import {FooterComponent} from "./footer/footer.component";
 import {AboutComponent} from "./about/about.component";
+import { SearchDisplayComponent } from './search-display/search-display.component';
+import { MentorSigninComponent } from './mentor-signin/mentor-signin.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import {AboutComponent} from "./about/about.component";
     SignUpComponent,
     TermsComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    SearchDisplayComponent,
+    MentorSigninComponent
   ],
   imports: [
     BrowserModule,
@@ -33,8 +37,8 @@ import {AboutComponent} from "./about/about.component";
         component: HeaderComponent
       },
       {
-        path: 'search-mentor',
-        component: SearchMentorComponent
+        path: 'search-display',
+        component: SearchDisplayComponent
       },
 
       {
@@ -48,6 +52,10 @@ import {AboutComponent} from "./about/about.component";
       {
         path: 'sign-in',
         component: SignInComponent
+      },
+      {
+        path: 'terms',
+        component: TermsComponent
       },
     ])
   ],
