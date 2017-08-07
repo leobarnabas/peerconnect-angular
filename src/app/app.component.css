@@ -1,6 +1,7 @@
-
-body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
+@media (min-width: 48em) {
+  html {
+    font-size: 18px;
+  }
 }
 
 ul.topnav {
