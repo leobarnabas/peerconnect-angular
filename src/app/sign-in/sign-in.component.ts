@@ -1,5 +1,5 @@
-import {Component, OnInit} from "@angular/core";
-import {Router} from "@angular/router";
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -8,7 +8,7 @@ import {Router} from "@angular/router";
 })
 export class SignInComponent implements OnInit {
 
-  constructor(private router:Router) {
+  constructor(private router: Router) {
   }
 
   ngOnInit() {
@@ -16,8 +16,8 @@ export class SignInComponent implements OnInit {
 
   onSubmit(e) {
     e.preventDefault();
-    var userName = e.target.elements[0].value;
-    var password = e.target.elements[1].value;
+    const userName = e.target.elements[0].value;
+    const password = e.target.elements[1].value;
     this.router.navigate(['search-mentor']);
     console.log(userName, password);
     /*return false;*/

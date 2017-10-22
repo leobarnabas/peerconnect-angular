@@ -1,7 +1,9 @@
-@media (min-width: 48em) {
-  html {
-    font-size: 18px;
-  }
+body {
+  font-size: 14px;
+}
+
+.container {
+  height: auto;
 }
 
 ul.topnav {
@@ -41,30 +43,25 @@ ul.topnav li.right {
   ul.topnav li {
     float: none;
   }
-}
 
-input[type=text] {
-  width: 130px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: white;
-  /*background-image: url('');*/
-  background-position: 10px 10px;
-  background-repeat: no-repeat;
-  padding: 40px 40px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-in-out;
-}
+  input[type=text] {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    /*background-image: url('');*/
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 40px 40px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
 
-input[type=text]:focus {
-  width: 100%;
-}
+  input[type=text]:focus {
+    width: 100%;
+  }
 
-footer {
-  text-align: center;
-  margin-top: 20px;
-  padding: 20px;
-  border-top: 1px solid #ddd;
+
 }

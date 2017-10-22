@@ -1,18 +1,21 @@
-import {BrowserModule} from "@angular/platform-browser";
-import {NgModule} from "@angular/core";
-import {FormsModule} from "@angular/forms";
-import {HttpModule} from "@angular/http";
-import {RouterModule} from "@angular/router";
-import {AppComponent} from "./app.component";
-import {HeaderComponent} from "./header/header.component";
-import {SearchMentorComponent} from "./search-mentor/search-mentor.component";
-import {SignInComponent} from "./sign-in/sign-in.component";
-import {SignUpComponent} from "./sign-up/sign-up.component";
-import {TermsComponent} from "./terms/terms.component";
-import {FooterComponent} from "./footer/footer.component";
-import {AboutComponent} from "./about/about.component";
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule , ReactiveFormsModule } from '@angular/forms';
+import {HttpModule} from '@angular/http';
+import {RouterModule} from '@angular/router';
+
+import {AppComponent} from './app.component';
+import {HeaderComponent} from './header/header.component';
+import {SearchMentorComponent} from './search-mentor/search-mentor.component';
+import {SignInComponent} from './sign-in/sign-in.component';
+import {SignUpComponent} from './sign-up/sign-up.component';
+import {TermsComponent} from './terms/terms.component';
+import {FooterComponent} from './footer/footer.component';
+import {AboutComponent} from './about/about.component';
 import { SearchDisplayComponent } from './search-display/search-display.component';
 import { MentorSigninComponent } from './mentor-signin/mentor-signin.component';
+import {ControlMessagesComponent } from './sign-up/control-messages.component';
+import {ValidationService} from './sign-up/validation.service';
 
 @NgModule({
   declarations: [
@@ -25,12 +28,14 @@ import { MentorSigninComponent } from './mentor-signin/mentor-signin.component';
     FooterComponent,
     AboutComponent,
     SearchDisplayComponent,
-    MentorSigninComponent
+    MentorSigninComponent,
+    ControlMessagesComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {
         path: 'header',
@@ -59,7 +64,7 @@ import { MentorSigninComponent } from './mentor-signin/mentor-signin.component';
       },
     ])
   ],
-  providers: [],
+  providers: [ValidationService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

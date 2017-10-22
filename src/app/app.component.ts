@@ -1,7 +1,7 @@
-import {Component} from "@angular/core";
-import {Http} from "@angular/http";
-import "rxjs/add/operator/catch";
-import "rxjs/add/operator/map";
+import {Component} from '@angular/core';
+import {Http} from '@angular/http';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +14,7 @@ export class AppComponent {
   title = 'app works!';
 
   constructor(http: Http) {
-    var obj = http.get('/users')
+    const obj = http.get('/users')
     // Call map on the response observable to get the parsed people object
       .map(res => res.json()).subscribe(data => {
         console.log(data.text);
