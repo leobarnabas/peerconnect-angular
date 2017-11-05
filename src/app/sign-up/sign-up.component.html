@@ -4,7 +4,7 @@
       <div class="col-md-10">
         <div class="card mx-4">
           <div class="card-block p-4">
-            <form   [formGroup]="myForm" submit ="onSubmit($event)">
+            <form   [formGroup]="myForm" (ngSubmit) ="onSubmit($event)">
               <h2>Register</h2>
               <div class="col-sm-12">
                 <div class="form-group">
@@ -84,7 +84,7 @@
               <div class="col-sm-12">
                 <div class="form-group">
                   <label for="password">Password</label>
-                  <input type="text" class="form-control" formControlName="password" id="password" placeholder="Password"/>
+                  <input type="password" class="form-control" formControlName="password" id="password" placeholder="Password"/>
 
                 </div>
               </div>
