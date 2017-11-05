@@ -1,3 +1,4 @@
+///<reference path="footer/footer.component.ts"/>
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule , ReactiveFormsModule } from '@angular/forms';
@@ -57,6 +58,10 @@ import {ValidationService} from './sign-up/validation.service';
       {
         path: 'sign-in',
         component: SignInComponent
+      },
+      {
+        path: 'footer',
+        component: FooterComponent
       },
       {
         path: 'terms',

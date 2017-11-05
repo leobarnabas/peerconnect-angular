@@ -1,4 +1,4 @@
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 992px) and (max-width: 1200px) {
   .container {
     height: auto;
   }
@@ -11,6 +11,9 @@
     font-size: 12px;
 
   }
+
+
+
 
 
 

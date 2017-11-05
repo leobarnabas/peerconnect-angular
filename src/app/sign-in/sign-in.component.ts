@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {Headers, Http} from '@angular/http';
 import {Router} from '@angular/router';
 
 @Component({
@@ -8,7 +9,9 @@ import {Router} from '@angular/router';
 })
 export class SignInComponent implements OnInit {
 
-  constructor(private router: Router) {
+  headers = new Headers({'Content-Type': 'application/json'});
+
+  constructor(private router: Router, private http: Http) {
   }
 
   ngOnInit() {
@@ -18,8 +21,17 @@ export class SignInComponent implements OnInit {
     e.preventDefault();
     const userName = e.target.elements[0].value;
     const password = e.target.elements[1].value;
-    this.router.navigate(['search-mentor']);
-    console.log(userName, password);
+
+
+
+    this.http.post('http://localhost:8080/users' ,
+      {params: {userId: userName, password: password}}, {headers: this.headers}, ).subscribe(data => {
+      this.router.navigate(['search-display']);
+      console.log('data after login:', data);
+
+    });
+
+
     /*return false;*/
   }
 }

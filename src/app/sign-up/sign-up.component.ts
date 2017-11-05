@@ -33,7 +33,7 @@ export class SignUpComponent implements OnInit {
   ngOnInit() {
   }
 
-  saveUser() {
+  /*saveUser() {
     if (this.myForm.dirty && this.myForm.valid) {
       alert(`firstName: ${this.myForm.value.firstName}
                lastName: ${this.myForm.value.lastName}
@@ -46,7 +46,7 @@ export class SignUpComponent implements OnInit {
                email: ${this.myForm.value.email}
                password: ${this.myForm.value.password}`);
     }
-  }
+  }*/
 
   onSubmit(e) {
     e.preventDefault();
@@ -63,7 +63,7 @@ export class SignUpComponent implements OnInit {
       'meetingPreference': e.target.elements[8].value,
       'isMentor': null
     };
-    this.http.post('/users' , JSON.stringify(user), {headers: this.headers}).subscribe(data => {
+    this.http.post('http://localhost:8080/users' , JSON.stringify(user), {headers: this.headers}).subscribe(data => {
 
       console.log('data after save:', data);
 

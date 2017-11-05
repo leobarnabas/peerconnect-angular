@@ -1,5 +1,16 @@
 .about-us {
   padding: 8rem 1.5rem;
   text-align: center;
-  font-size: 0px;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.6;
+  font-family: Roboto,sans-serif;
+
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
