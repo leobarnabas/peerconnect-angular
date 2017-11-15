@@ -26,7 +26,7 @@ export class SignInComponent implements OnInit {
 
     this.http.post('http://localhost:8080/users' ,
       {params: {userId: userName, password: password}}, {headers: this.headers}, ).subscribe(data => {
-      this.router.navigate(['search-display']);
+      this.router.navigate(['footer']);
       console.log('data after login:', data);
 
     });

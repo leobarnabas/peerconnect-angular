@@ -60,19 +60,31 @@
                   <label for="gender">Gender</label>
                   <input type="text" class="form-control" formControlName="gender"  id="gender"
                          placeholder="Gender"/>
-
                 </div>
-
-                <div class="form-group">
+              </div>
+                <div class="form-group col-sm-10">
                   <label> Mentoring Options</label>
-                  <label>
-                    <select name="In Person or Virtual">
+                    <select name="In Person or Virtual" class="form-control">
                       <option value="In Person">In Person</option>
                       <option value="Virtual">Virtual</option>
                     </select>
-                  </label>
                 </div>
-              </div>
+                <div class="form-group col-sm-10">
+                  <label> Mentoring Track</label>
+                    <select name="Track" class="form-control">
+                      <option value="Fast Track">Fast Track</option>
+                      <option value="One Year">One Year</option>
+                      <option value="Two Years">Two Year</option>
+                    </select>
+                </div>
+                <div class="form-group col-sm-10">
+                  <label> Choose File </label>
+                  <div class="custom-file">
+                    <input type="file" id="file" class="custom-file-input" required>
+                    <span class="custom-file-control"></span>
+                  </div>
+                </div>
+
               <h2>Login Credentials </h2>
               <div class="col-sm-12">
                 <div class="form-group">
@@ -85,7 +97,12 @@
                 <div class="form-group">
                   <label for="password">Password</label>
                   <input type="password" class="form-control" formControlName="password" id="password" placeholder="Password"/>
-
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <label for="cpassword">Confirm Password</label>
+                  <input type="password" class="form-control" formControlName="password" id="cpassword" placeholder="Confirm Password" />
                 </div>
               </div>
               <div class="col-sm-12" >

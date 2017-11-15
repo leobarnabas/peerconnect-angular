@@ -1,3 +1,8 @@
+.container-fluid{
+  background-color: rgba(233, 236, 239, 0.6);
+  padding: 40px 40px 0px 0px;
+}
+
 .sidenav {
   height: 100%;
   width: 200px;
@@ -7,7 +12,7 @@
   left: 0;
   background-color: #4255ff;
   overflow-x: hidden;
-  padding-top: 20px;
+  padding-top: 80px;
 }
 
 .sidenav a {

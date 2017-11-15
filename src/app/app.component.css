@@ -8,7 +8,7 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #4255ff;
+  background-color: indigo;
 }
 
 ul.topnav li {
@@ -17,7 +17,7 @@ ul.topnav li {
 
 ul.topnav li a {
   display: block;
-  color: black;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -40,25 +40,5 @@ ul.topnav li.right {
   ul.topnav li {
     float: none;
   }
-
-  input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    /*background-image: url('');*/
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 40px 40px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-  }
-
-  input[type=text]:focus {
-    width: 100%;
-  }
-
 
 }
